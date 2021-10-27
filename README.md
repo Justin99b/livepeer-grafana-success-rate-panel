@@ -11,6 +11,6 @@ Here the config for the Data Source:
 
 URL: `https://leaderboard-serverless.vercel.app/api/raw_stats`
 <br/>
-Query string `orchestrator=YOUR_ORCHESTRATOR_ADDRESS`
+Query string: `orchestrator=YOUR_ORCHESTRATOR_ADDRESS`
 
 ![image](https://user-images.githubusercontent.com/17692991/139015432-a608bc24-c2b4-438b-8e99-7fd1549130c8.png)
