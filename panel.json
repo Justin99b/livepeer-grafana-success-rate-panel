@@ -1,0 +1,82 @@
+{
+  "id": 44,
+  "gridPos": {
+    "x": 0,
+    "y": 29,
+    "w": 24,
+    "h": 9
+  },
+  "type": "barchart",
+  "title": "Success Rate",
+  "targets": [
+    {
+      "refId": "A",
+      "cacheDurationSeconds": 300,
+      "method": "GET",
+      "queryParams": "",
+      "urlPath": "",
+      "fields": [
+        {
+          "jsonPath": "$.*.*.region"
+        },
+        {
+          "name": "",
+          "jsonPath": "$.*.*.success_rate",
+          "language": "jsonpath"
+        }
+      ]
+    }
+  ],
+  "options": {
+    "orientation": "auto",
+    "showValue": "always",
+    "stacking": "none",
+    "groupWidth": 0.7,
+    "barWidth": 0.97,
+    "tooltip": {
+      "mode": "single"
+    },
+    "legend": {
+      "displayMode": "hidden",
+      "placement": "bottom",
+      "calcs": []
+    },
+    "text": {}
+  },
+  "fieldConfig": {
+    "defaults": {
+      "custom": {
+        "lineWidth": 1,
+        "fillOpacity": 80,
+        "gradientMode": "scheme",
+        "axisPlacement": "auto",
+        "axisLabel": "Success Rate",
+        "axisSoftMin": 0,
+        "hideFrom": {
+          "tooltip": false,
+          "viz": false,
+          "legend": false
+        },
+        "axisSoftMax": 1
+      },
+      "color": {
+        "mode": "thresholds"
+      },
+      "thresholds": {
+        "mode": "absolute",
+        "steps": [
+          {
+            "color": "dark-blue",
+            "value": null
+          }
+        ]
+      },
+      "mappings": [],
+      "unit": "percentunit"
+    },
+    "overrides": []
+  },
+  "datasource": "JSON API",
+  "pluginVersion": "8.2.1",
+  "transformations": []
+}
